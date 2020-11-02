@@ -37,6 +37,7 @@ If you are struggling with finding a company then you can choose from one of the
 
 ## Level 2 Process
 - Create a dark mode / light mode for the Design System with suitable adjustments
+- Be inspired by other Design Systems and add other components like forms, accordions, modals, etc.
 
 
 
