@@ -1,6 +1,6 @@
 <img src="./.readme/noroff-light.png" width="160" align="right">
 
-# DWSIGN 2 - Course Assignment
+# DESIGN 2 - Course Assignment
 
 ## Brief
 
