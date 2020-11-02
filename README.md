@@ -4,7 +4,8 @@
 
 ## Brief
 
-You are making a design system for a company of your choice. 
+You are making a design system for a company of your choice. You can use your current design system as a starting point for this assignment. 
+Use the tools you want, but override the the styles with the design system. 
 If you are struggling with finding a company then you can choose from one of these:
 - http://www.natteravnene.no/
 - https://www.riksmalsforbundet.no/
