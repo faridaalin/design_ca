@@ -1,5 +1,5 @@
 import "./App.css";
-import { Square, Layout } from "./components";
+import { Square, Layout, Pattern } from "./components";
 import theme from "./theme";
 import { ThemeProvider } from "styled-components";
 import styled from "styled-components/macro";
@@ -41,6 +41,11 @@ function App() {
             <Square shade="200" name="Cloud" colorName="grey" hex="0000" hsla="000 000 000" />
             <Square shade="100" name="Cloud" colorName="grey" hex="0000" hsla="000 000 000" />
           </Grid>
+        </Layout>
+
+        <Layout title="Pattern">
+          <Pattern  />
+
         </Layout>
 
         <p>pattern</p>
