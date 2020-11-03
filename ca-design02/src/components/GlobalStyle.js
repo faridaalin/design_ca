@@ -9,7 +9,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: ${({ theme: { fontFamily } }) => fontFamily.text};
     color: ${({ theme: { colors } }) => colors.black[400]};
-    background: ${({ theme: { colors } }) => colors.grey['100']};
+    background: ${({ theme: { colors } }) => colors.grey["100"]};
   }
 
   h1, h2, h3, h4 {
@@ -18,8 +18,8 @@ const GlobalStyle = createGlobalStyle`
     margin-bottom: ${({ theme: { margin } }) => margin.xs};
   }
   p {
-    margin-top: ${({theme: {margin}}) => margin.xs};
-margin-bottom: ${({theme: {margin}}) => margin.xs};
+    margin-top: ${({ theme: { margin } }) => margin.xs};
+margin-bottom: ${({ theme: { margin } }) => margin.xs};
   }
 
 `;

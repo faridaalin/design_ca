@@ -1,5 +1,5 @@
 import "./App.css";
-import { Square, Layout, Pattern, Typography } from "./components";
+import { Square, Layout, Pattern, Typography, Button } from "./components";
 import styled from "styled-components/macro";
 
 const Grid = styled.div`
@@ -136,6 +136,10 @@ function App() {
 
         <Layout title="Typography">
           <Typography />
+        </Layout>
+        <Layout title="Buttons">
+          <Button primary >Primary</Button>
+          <Button secondary >Secondary</Button>
         </Layout>
 
         <p>Buttons & Links</p>

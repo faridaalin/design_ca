@@ -1,12 +1,14 @@
 
 const theme = {
   colors: {
+    primary: '#364DBF',
+    secondary: '#181b1b',
     pink: {
-      100: '#F9928F',
-      200: '#EA7774',
-      300: '#E8635E',
-      400: '#E55550',
-      500: '#E34641',
+      100: '#6073D2',
+      200: '#5065CE',
+      300: '#4057C9',
+      400: '#364DBF',
+      500: '#2F42A5',
     },
     black: {
       100: '#2d3232',
@@ -30,6 +32,14 @@ const theme = {
     s: '1rem',
     md: '1.5rem',
     l: '2rem'
+  },
+  padding: {
+    p1: '0.5rem',
+    p2: '1rem',
+    p3: '1.5rem',
+    p4: '2rem',
+    p5: '2.5rem',
+    p6: '3rem'
   },
   fontFamily: {
     header: `'Raleway', sans-serif`,

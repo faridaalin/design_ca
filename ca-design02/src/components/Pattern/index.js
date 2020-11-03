@@ -3,7 +3,6 @@ import pattern from "../../cubes.png";
 import { Container } from "./StyledPattern";
 
 const Pattern = (props) => {
-  console.log(pattern);
 
   return (
     <Container>
