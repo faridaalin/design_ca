@@ -5,6 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import GlobalStyle from "./components/GlobalStyle";
 
+
 ReactDOM.render(
   <React.StrictMode>
     <GlobalStyle />

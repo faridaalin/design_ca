@@ -1,16 +1,13 @@
 import "./App.css";
 import { Square, Layout } from "./components";
 import theme from "./theme";
-import { ThemeProvider } from "emotion-theming";
+import { ThemeProvider } from "styled-components";
 import styled from "styled-components/macro";
 
-const Div = styled.div`
-height: 100%;
-`;
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 200px));
-  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1.5rem;
 `;
 
 function App() {
@@ -19,19 +16,30 @@ function App() {
       <main className="App">
         <p>Menu</p>
         <Layout title="Color scheme">
+        <h3>Primary</h3>
           <Grid>
-            <Div>
-              <Square>Square</Square>
-              <div>Coral</div>
-              <div>Hex:</div>
-              <div>HSL:</div>
-            </Div>
-            <Div>
-              <Square />
-              <div>Coral</div>
-              <div>Hex:</div>
-              <div>HSL:</div>
-            </Div>
+            <Square shade="500" name="pink" colorName="pink" hex="0000" hsla="000 000 000" />
+            <Square shade="400" name="pink" colorName="pink" hex="0000" hsla="000 000 000" />
+            <Square shade="300" name="pink" colorName="pink" hex="0000" hsla="000 000 000" />
+            <Square shade="200" name="pink" colorName="pink" hex="0000" hsla="000 000 000" />
+            <Square shade="100" name="pink" colorName="pink" hex="0000" hsla="000 000 000" />
+          </Grid>
+           <h3>Black</h3>
+          <Grid>
+            <Square shade="500" name="Black" colorName="black" hex="0000" hsla="000 000 000" />
+            <Square shade="400" name="Black" colorName="black" hex="0000" hsla="000 000 000" />
+            <Square shade="300" name="Black" colorName="black" hex="0000" hsla="000 000 000" />
+            <Square shade="200" name="Black" colorName="black" hex="0000" hsla="000 000 000" />
+            <Square shade="100" name="Black" colorName="black" hex="0000" hsla="000 000 000" />
+          </Grid>
+
+          <h3>Cloud</h3>
+          <Grid>
+            <Square shade="500" name="Cloud" colorName="grey" hex="0000" hsla="000 000 000" />
+            <Square shade="400" name="Cloud" colorName="grey" hex="0000" hsla="000 000 000" />
+            <Square shade="300" name="Cloud" colorName="grey" hex="0000" hsla="000 000 000" />
+            <Square shade="200" name="Cloud" colorName="grey" hex="0000" hsla="000 000 000" />
+            <Square shade="100" name="Cloud" colorName="grey" hex="0000" hsla="000 000 000" />
           </Grid>
         </Layout>
 
