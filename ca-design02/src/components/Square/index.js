@@ -11,9 +11,6 @@ const Container = styled.div`
 `;
 
 const StyledSquare = styled.div`
-
-  /* background-color: ${(props) =>
-    console.log(props.colors[props.colorName], props.color )}; */
     background: ${props => props.theme.colors[props.colorName][props.shade]};
   height: 100px;
   width: 100%;
@@ -22,8 +19,7 @@ const StyledSquare = styled.div`
 
 const Square = (props) => {
   const {colorName, shade} = props;
-  // console.log(colorName)
-  // console.log(shade)
+
   return (
     <Container>
       <StyledSquare shade={shade} colorName={colorName} />
@@ -37,6 +33,3 @@ const Square = (props) => {
 };
 
 export { Square };
-
-  /* background-color: ${({ theme: { colors }, ...props }) =>
-    colors.pink[props.color]}; */

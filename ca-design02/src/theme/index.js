@@ -25,20 +25,28 @@ const theme = {
 
   },
   fontSizes: [12, 14, 16, 18, 24, 26],
-  space: {
-    0.5: '0.5rem',
-    1: '1rem',
-    1.5: '1.5rem',
-    2: '2rem'
+  margin: {
+    xs: '0.5rem',
+    s: '1rem',
+    md: '1.5rem',
+    l: '2rem'
   },
-
-
-  sizes: {
-    0.5: '0.5rem',
-    1: '1rem',
-    1.5: '1.5rem',
-    2: '2rem',
-    100: '100%'
+  fontFamily: {
+    header: `'Raleway', sans-serif`,
+    text: `'Work Sans', sans-serif`,
+  },
+  fontWeight: {
+    extraLight: 200, //body
+    light: 300, // body
+    regular: 400, //Both
+    medium: 500, //header
+    bold: 700, // header
+  },
+  breakpoints: {
+    sm: '576px',
+    md: '768px',
+    lg: '992px',
+    xl: '1200px',
   },
 }
 
