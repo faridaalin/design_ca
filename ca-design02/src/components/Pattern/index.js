@@ -21,7 +21,7 @@ const Pattern = (props) => {
 
   return (
     <Container>
-      <StyledPattern  />
+      <StyledPattern />
       <div className="info">
         <p>Description</p>
       </div>
