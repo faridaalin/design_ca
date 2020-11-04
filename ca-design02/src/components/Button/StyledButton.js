@@ -72,7 +72,6 @@ position: relative;
 padding: 0;
 padding-top: 0.5rem;
 padding-bottom: 0.5rem;
-margin-bottom: 0;
 align-self: center;
 
 &::after {
