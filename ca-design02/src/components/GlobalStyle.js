@@ -12,6 +12,10 @@ const GlobalStyle = createGlobalStyle`
     background: ${({ theme: { colors } }) => colors.grey["100"]};
   }
 
+  img {
+    width: 100%;
+  }
+
   h1, h2, h3, h4 {
     font-family: ${({ theme: { fontFamily } }) => fontFamily.header};
     margin-top: ${({ theme: { margin } }) => margin.xs};

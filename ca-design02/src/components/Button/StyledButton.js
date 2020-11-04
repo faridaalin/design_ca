@@ -121,6 +121,7 @@ border: 1px solid transparent;
 margin-bottom: 1rem;
 margin-right: 1rem;
 white-space: nowrap;
+cursor: pointer;
 
 ${getButtonStyles}
 `;

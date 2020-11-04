@@ -1,5 +1,5 @@
 import "./App.css";
-import { ColorBoxes, Layout, Pattern, Typography, Buttons, Links } from "./components";
+import { ColorBoxes, Layout, Pattern, Typography, Buttons, Links, Images } from "./components";
 
 function App() {
   return (
@@ -16,15 +16,21 @@ function App() {
       <Layout title="Typography">
         <Typography />
       </Layout>
+
       <Layout title="Buttons">
         <Buttons />
       </Layout>
+
       <Layout title="Links">
         <Links />
       </Layout>
 
 
-      <p> image section</p>
+      <Layout title="Images">
+        <Images />
+      </Layout>
+
+
       <p> Sharing card and lazy loading with fallbacks</p>
     </main>
   );
