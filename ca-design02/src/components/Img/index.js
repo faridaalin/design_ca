@@ -14,8 +14,7 @@ const Images = () => (
       alt="women working in a office"
       effect="blur"
       src={smallImg}
-      // sizes='(max-width 500px) 500px, 1000px'
-      sizes='(max-width: 1000px)100vw, 30vw'
+      sizes='(min-width: 500px) 50vw, 100vw'
       srcSet={`${smallImg} 200w, ${medImg} 645w, ${largeImg} 1076w`} // use normal <img> attributes as props
        />
     </picture>
