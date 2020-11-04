@@ -30,7 +30,6 @@ function App() {
       <Layout title="Images">
         <Images />
       </Layout>
-      <p> Sharing card</p>
     </main>
   );
 }
