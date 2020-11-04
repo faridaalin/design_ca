@@ -11,10 +11,9 @@ const Container = styled.div`
 `;
 
 const StyledSquare = styled.div`
-    background: ${props => props.theme.colors[props.colorName][props.shade]};
+  background: ${(props) => props.theme.colors[props.colorName][props.shade]};
   height: 100px;
   width: 100%;
-
 `;
 
 const Grid = styled.div`
@@ -23,9 +22,8 @@ const Grid = styled.div`
   gap: 0.5rem;
 `;
 
-
 const Square = (props) => {
-  const {colorName, shade} = props;
+  const { colorName, shade } = props;
 
   return (
     <Container>
@@ -39,49 +37,125 @@ const Square = (props) => {
   );
 };
 
-
-
-
 const ColorBoxes = () => {
   return (
+    <>
+       <h3>Primary</h3>
     <Grid>
-    <Square
-      shade="500"
-      name="purple"
-      colorName="purple"
-      hex="0000"
-      hsla="000 000 000"
-    />
-    <Square
-      shade="400"
-      name="purple"
-      colorName="purple"
-      hex="0000"
-      hsla="000 000 000"
-    />
-    <Square
-      shade="300"
-      name="purple"
-      colorName="purple"
-      hex="0000"
-      hsla="000 000 000"
-    />
-    <Square
-      shade="200"
-      name="purple"
-      colorName="purple"
-      hex="0000"
-      hsla="000 000 000"
-    />
-    <Square
-      shade="100"
-      name="purple"
-      colorName="purple"
-      hex="0000"
-      hsla="000 000 000"
-    />
-  </Grid>
-  )
-}
+      <Square
+        shade="500"
+        name="purple"
+        colorName="purple"
+        hex="0000"
+        hsla="000 000 000"
+      />
+      <Square
+        shade="400"
+        name="purple"
+        colorName="purple"
+        hex="0000"
+        hsla="000 000 000"
+      />
+      <Square
+        shade="300"
+        name="purple"
+        colorName="purple"
+        hex="0000"
+        hsla="000 000 000"
+      />
+      <Square
+        shade="200"
+        name="purple"
+        colorName="purple"
+        hex="0000"
+        hsla="000 000 000"
+      />
+      <Square
+        shade="100"
+        name="purple"
+        colorName="purple"
+        hex="0000"
+        hsla="000 000 000"
+      />
+    </Grid>
+    <h3>Black</h3>
+    <Grid>
+      <Square
+        shade="500"
+        name="black"
+        colorName="black"
+        hex="0000"
+        hsla="000 000 000"
+      />
+      <Square
+        shade="400"
+        name="black"
+        colorName="black"
+        hex="0000"
+        hsla="000 000 000"
+      />
+      <Square
+        shade="300"
+        name="black"
+        colorName="black"
+        hex="0000"
+        hsla="000 000 000"
+      />
+      <Square
+        shade="200"
+        name="black"
+        colorName="black"
+        hex="0000"
+        hsla="000 000 000"
+      />
+      <Square
+        shade="100"
+        name="black"
+        colorName="black"
+        hex="0000"
+        hsla="000 000 000"
+      />
+    </Grid>
+    <h3>Cloud</h3>
+    <Grid>
+      <Square
+        shade="500"
+        name="grey"
+        colorName="grey"
+        hex="0000"
+        hsla="000 000 000"
+      />
+      <Square
+        shade="400"
+        name="grey"
+        colorName="grey"
+        hex="0000"
+        hsla="000 000 000"
+      />
+      <Square
+        shade="300"
+        name="grey"
+        colorName="grey"
+        hex="0000"
+        hsla="000 000 000"
+      />
+      <Square
+        shade="200"
+        name="grey"
+        colorName="grey"
+        hex="0000"
+        hsla="000 000 000"
+      />
+      <Square
+        shade="100"
+        name="grey"
+        colorName="grey"
+        hex="0000"
+        hsla="000 000 000"
+      />
+    </Grid>
+    </>
+  );
+};
 
 export { ColorBoxes };

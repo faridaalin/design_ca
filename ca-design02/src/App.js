@@ -6,7 +6,6 @@ function App() {
     <main className="App">
       <p>Menu</p>
       <Layout title="Color scheme">
-        <h3>Primary</h3>
         <ColorBoxes />
       </Layout>
 
