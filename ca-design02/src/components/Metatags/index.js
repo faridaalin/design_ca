@@ -1,7 +1,7 @@
 import React from "react";
 import Helmet from "react-helmet";
 
-const ReactHelmet = () => {
+const Metatags = () => {
   return (
     <Helmet>
     {/* <!-- HTML Meta Tags --> */}
@@ -16,7 +16,6 @@ const ReactHelmet = () => {
     <meta
       itemprop="description"
       content="JURK er juridisk rådgivning for kvinner og er et uavhengig rettshjelps- og likestillingstiltak som drives av jusstudenter."
-
     />
     <meta
       itemprop="image"
@@ -33,7 +32,7 @@ const ReactHelmet = () => {
     />
     <meta
       property="og:image"
-      content="https://res.cloudinary.com/djey7uz4e/image/upload/v1604501755/jurk_g2ax4u.png
+      content="https://res.cloudinary.com/djey7uz4e/image/upload/v1604501755/jurk_g2ax4u.png"
     />
 
     {/* <!-- Twitter Meta Tags --> */}
@@ -51,4 +50,4 @@ const ReactHelmet = () => {
   )
 }
 
-export { ReactHelmet };
+export { Metatags };

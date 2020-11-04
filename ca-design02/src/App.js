@@ -1,10 +1,10 @@
 import "./App.css";
-import { ColorBoxes, Layout, Pattern, Typography, Buttons, Links, Images, ReactHelmet } from "./components";
+import { ColorBoxes, Layout, Pattern, Typography, Buttons, Links, Images, Metatags } from "./components";
 
 function App() {
   return (
     <main className="App">
-      <ReactHelmet />
+      <Metatags />
       <p>Menu</p>
       <Layout title="Color scheme">
         <ColorBoxes />
