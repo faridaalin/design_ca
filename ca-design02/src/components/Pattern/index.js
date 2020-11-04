@@ -1,5 +1,4 @@
 import React from "react";
-import pattern from "../../cubes.png";
 import { Container } from "./StyledPattern";
 
 const Pattern = (props) => {

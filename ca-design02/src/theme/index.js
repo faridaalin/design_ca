@@ -1,9 +1,10 @@
 
+
 const theme = {
   colors: {
     primary: '#364DBF',
-    secondary: '#181b1b',
-    pink: {
+    secondary: '#2d3232',
+    purple: {
       100: '#6073D2',
       200: '#5065CE',
       300: '#4057C9',
@@ -35,11 +36,12 @@ const theme = {
   },
   padding: {
     p1: '0.5rem',
-    p2: '1rem',
-    p3: '1.5rem',
-    p4: '2rem',
-    p5: '2.5rem',
-    p6: '3rem'
+    p2: '0.8rem',
+    p3: '1rem',
+    p4: '1.5rem',
+    p5: '2rem',
+    p6: '2.5rem',
+    p7: '3rem'
   },
   fontFamily: {
     header: `'Raleway', sans-serif`,
@@ -60,9 +62,8 @@ const theme = {
   },
 }
 
-theme.borders = {
-  thin: '1px solid',
-  thick: '2px solid'
-}
+
+
+
 
 export default theme

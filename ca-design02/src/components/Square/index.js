@@ -17,6 +17,13 @@ const StyledSquare = styled.div`
 
 `;
 
+const Grid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 0.5rem;
+`;
+
+
 const Square = (props) => {
   const {colorName, shade} = props;
 
@@ -32,4 +39,49 @@ const Square = (props) => {
   );
 };
 
-export { Square };
+
+
+
+const ColorBoxes = () => {
+  return (
+    <Grid>
+    <Square
+      shade="500"
+      name="purple"
+      colorName="purple"
+      hex="0000"
+      hsla="000 000 000"
+    />
+    <Square
+      shade="400"
+      name="purple"
+      colorName="purple"
+      hex="0000"
+      hsla="000 000 000"
+    />
+    <Square
+      shade="300"
+      name="purple"
+      colorName="purple"
+      hex="0000"
+      hsla="000 000 000"
+    />
+    <Square
+      shade="200"
+      name="purple"
+      colorName="purple"
+      hex="0000"
+      hsla="000 000 000"
+    />
+    <Square
+      shade="100"
+      name="purple"
+      colorName="purple"
+      hex="0000"
+      hsla="000 000 000"
+    />
+  </Grid>
+  )
+}
+
+export { ColorBoxes };

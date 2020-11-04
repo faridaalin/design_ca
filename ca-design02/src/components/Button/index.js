@@ -9,5 +9,15 @@ function Button(props) {
     </StyledButton>
   )
 }
+function Buttons () {
 
-export { Button };
+  return (
+    <>
+    <Button primary >Primary</Button>
+    <Button secondary >Secondary</Button>
+    <Button ghost >Ghost</Button>
+    </>
+  )
+}
+
+export { Buttons };
