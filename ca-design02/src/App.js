@@ -1,9 +1,10 @@
 import "./App.css";
-import { ColorBoxes, Layout, Pattern, Typography, Buttons, Links, Images } from "./components";
+import { ColorBoxes, Layout, Pattern, Typography, Buttons, Links, Images, ReactHelmet } from "./components";
 
 function App() {
   return (
     <main className="App">
+      <ReactHelmet />
       <p>Menu</p>
       <Layout title="Color scheme">
         <ColorBoxes />
@@ -29,9 +30,7 @@ function App() {
       <Layout title="Images">
         <Images />
       </Layout>
-
-
-      <p> Sharing card and lazy loading with fallbacks</p>
+      <p> Sharing card</p>
     </main>
   );
 }
