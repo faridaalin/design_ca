@@ -65,16 +65,50 @@ color: ${({ theme}) => theme.colors.purple['400']};
   }
 `
 
-const getButtonStyles = (props) => {
-  if(props.primary) {
-    return primaryButtonStyles;
+const linkButtonStyles = css`
+background: transparent;
+color:  ${({ theme}) => theme.colors.primary};
+position: relative;
+padding: 0;
+padding-top: 0.5rem;
+padding-bottom: 0.5rem;
+margin-bottom: 0;
+align-self: center;
+
+&::after {
+  content: '';
+    width: 100%;
+    background: ${({ theme}) => theme.colors.primary};
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    z-index: 1;
   }
 
-  return props.ghost ? ghostButtonStyles : secondaryButtonStyles;
+
+&:hover, &:hover::after {
+  opacity: 0.8;
+  }
+
+  &:active {
+    color:  ${({ theme}) => theme.colors.purple['500']};
+
+  }
+
+  &:focus, &:focus::after  {
+    outline-color: ${({ theme}) => theme.colors.purple['100']};
+
+  }
+`
+
+const getButtonStyles = (props) => {
+  return props.primary ? primaryButtonStyles
+      : props.ghost ? ghostButtonStyles
+      : props.buttonLink ? linkButtonStyles
+      : secondaryButtonStyles
+
 }
-
-
-
 
 export const StyledButton = styled.button`
 padding: ${({ theme: { padding } }) => `${padding.p2} ${padding.p5}`};
@@ -86,7 +120,14 @@ border: none;
 border-radius: 100px;
 border: 1px solid transparent;
 margin-bottom: 1rem;
+margin-right: 1rem;
+white-space: nowrap;
 
 ${getButtonStyles}
+`;
 
+
+export const Container = styled.div`
+  display: flex;
+  flex-wrap: wrap;
 `;
