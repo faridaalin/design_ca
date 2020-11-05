@@ -26,42 +26,42 @@ const primaryButtonStyles = css`
   color: ${({ theme}) => theme.colors.grey['300']};
 
   &:hover {
-    background: ${({ theme}) => theme.colors.purple['300']};
+    background: ${({ theme}) => theme.colors.blue['300']};
     color: ${({ theme}) => theme.colors.grey['100']};
   }
 
   &:active {
-    background: ${({ theme}) => theme.colors.purple['500']};
+    background: ${({ theme}) => theme.colors.blue['500']};
   }
   &:focus {
-    background: ${({ theme}) => theme.colors.purple['500']};
+    background: ${({ theme}) => theme.colors.blue['500']};
     outline: none;
     color: ${({ theme}) => theme.colors.grey['100']};
     box-shadow: 0 0 0 2px white,
-    0 0 0 4px ${({ theme}) => theme.colors.purple['100']};
+    0 0 0 4px ${({ theme}) => theme.colors.blue['100']};
   }
 `
 
 const ghostButtonStyles = css`
 border-color: ${({ theme}) => theme.colors.primary};
 background: transparent;
-color: ${({ theme}) => theme.colors.purple['400']};
+color: ${({ theme}) => theme.colors.blue['400']};
 
 &:hover {
-    background: ${({ theme}) => theme.colors.purple['400']};
+    background: ${({ theme}) => theme.colors.blue['400']};
     color: ${({ theme}) => theme.colors.grey['100']};
   }
 
   &:active {
-    background: ${({ theme}) => theme.colors.purple['500']};
+    background: ${({ theme}) => theme.colors.blue['500']};
     color: ${({ theme}) => theme.colors.grey['100']};
   }
   &:focus {
-    background: ${({ theme}) => theme.colors.purple['500']};
+    background: ${({ theme}) => theme.colors.blue['500']};
     outline: none;
     color: ${({ theme}) => theme.colors.grey['100']};
     box-shadow: 0 0 0 2px white,
-    0 0 0 4px ${({ theme}) => theme.colors.purple['100']};
+    0 0 0 4px ${({ theme}) => theme.colors.blue['100']};
   }
 `
 
@@ -91,12 +91,12 @@ align-self: center;
   }
 
   &:active {
-    color:  ${({ theme}) => theme.colors.purple['500']};
+    color:  ${({ theme}) => theme.colors.blue['500']};
 
   }
 
   &:focus, &:focus::after  {
-    outline-color: ${({ theme}) => theme.colors.purple['100']};
+    outline-color: ${({ theme}) => theme.colors.blue['100']};
 
   }
 `

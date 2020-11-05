@@ -6,18 +6,18 @@ const LinkStyles = css`
   border-bottom: 1px solid transparent;
 `;
 const HoveredLink = css`
-  color: ${({ theme }) => theme.colors.purple["200"]};
-  border-color: ${({ theme }) => theme.colors.purple["200"]};
+  color: ${({ theme }) => theme.colors.blue["200"]};
+  border-color: ${({ theme }) => theme.colors.blue["200"]};
 `;
 
 const ActiveLink = css`
-  color: ${({ theme }) => theme.colors.purple["500"]};
-  border-color: ${({ theme }) => theme.colors.purple["500"]};
+  color: ${({ theme }) => theme.colors.blue["500"]};
+  border-color: ${({ theme }) => theme.colors.blue["500"]};
 `;
 
 const FocusedLink = css`
   outline: none;
-  box-shadow: 0 0 0 2px ${({ theme }) => theme.colors.purple["500"]},
+  box-shadow: 0 0 0 2px ${({ theme }) => theme.colors.blue["500"]},
     0 0 0 6px ${({ theme }) => theme.colors.grey["400"]};
 `;
 

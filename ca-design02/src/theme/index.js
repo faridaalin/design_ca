@@ -4,7 +4,7 @@ const theme = {
   colors: {
     primary: '#364DBF',
     secondary: '#2d3232',
-    purple: {
+    blue: {
       100: '#6073D2',
       200: '#5065CE',
       300: '#4057C9',
@@ -61,12 +61,7 @@ const theme = {
     xl: '1200px',
   },
 }
- theme.sizes = [8, 16, 24, 32]
- theme.cTest = {
-  text: 'black',
-  background: 'white',
-  primary: 'rebeccapurple',
-};
+
 
 
 

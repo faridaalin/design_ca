@@ -1,26 +1,5 @@
 import React from "react";
-import styled from "styled-components/macro";
-
-const Container = styled.div`
-  height: 100%;
-  box-shadow: 0px 1px 4px #b1b1b1;
-  .color-info {
-    padding: 1rem;
-    font-size: 0.8rem;
-  }
-`;
-
-const StyledSquare = styled.div`
-  background: ${(props) => props.theme.colors[props.colorName][props.shade]};
-  height: 100px;
-  width: 100%;
-`;
-
-const Grid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 0.5rem;
-`;
+import {Container, StyledSquare, Grid} from './StyledColorsAquare'
 
 const Square = (props) => {
   const { colorName, shade } = props;
@@ -30,7 +9,7 @@ const Square = (props) => {
       <StyledSquare shade={shade} colorName={colorName} />
       <div className="color-info">
         <p>{props.name}</p>
-        <p>Hex #{props.hex}</p>
+        <p>Hex {props.hex}</p>
         <p>HSL {props.hsla}</p>
       </div>
     </Container>
@@ -44,114 +23,114 @@ const ColorBoxes = (props) => {
     <Grid>
       <Square
         shade="500"
-        name="purple"
-        colorName="purple"
-        hex="0000"
-        hsla="000 000 000"
+        name="Modest Blue"
+        colorName="blue"
+        hex="#2f42a5"
+        hsla="(230, 56%, 42%"
       />
       <Square
         shade="400"
-        name="purple"
-        colorName="purple"
-        hex="0000"
-        hsla="000 000 000"
+        name="Modest Blue"
+        colorName="blue"
+        hex="#364DBF'"
+        hsla="(230, 56%, 48%)"
       />
       <Square
         shade="300"
-        name="purple"
-        colorName="purple"
-        hex="0000"
-        hsla="000 000 000"
+        name="Modest Blue"
+        colorName="blue"
+        hex="#4057C9"
+        hsla="(230, 56%, 52%)"
       />
       <Square
         shade="200"
-        name="purple"
-        colorName="purple"
-        hex="0000"
-        hsla="000 000 000"
+        name="Modest Blue"
+        colorName="blue"
+        hex="#5065CE"
+        hsla="(230, 56%, 56%)"
       />
       <Square
         shade="100"
-        name="purple"
-        colorName="purple"
-        hex="0000"
-        hsla="000 000 000"
+        name="Modest Blue"
+        colorName="blue"
+        hex="#6073D2"
+        hsla="(230, 56%, 60%)"
       />
     </Grid>
     <h3>Black</h3>
     <Grid>
       <Square
         shade="500"
-        name="black"
+        name="Black"
         colorName="black"
-        hex="0000"
-        hsla="000 000 000"
+        hex="#111313"
+        hsla="(180, 6%, 7%)"
       />
       <Square
         shade="400"
-        name="black"
+        name="Black"
         colorName="black"
-        hex="0000"
-        hsla="000 000 000"
+        hex="#181b1b"
+        hsla="(180, 6%, 10%)"
       />
       <Square
         shade="300"
-        name="black"
+        name="Black"
         colorName="black"
-        hex="0000"
-        hsla="000 000 000"
+        hex="#1f2222"
+        hsla="(180, 5%, 13%)"
       />
       <Square
         shade="200"
-        name="black"
+        name="Black"
         colorName="black"
-        hex="0000"
-        hsla="000 000 000"
+        hex="#262a2a"
+        hsla="(180, 5%, 16%)"
       />
       <Square
         shade="100"
-        name="black"
+        name="Black"
         colorName="black"
-        hex="0000"
-        hsla="000 000 000"
+        hex="#2d3232"
+        hsla="(180, 5%, 19%)"
       />
     </Grid>
     <h3>Cloud</h3>
     <Grid>
       <Square
         shade="500"
-        name="grey"
+        name="Cloud"
         colorName="grey"
-        hex="0000"
-        hsla="000 000 000"
+        hex="#b6b6cb"
+        hsla="(240, 17%, 75%)"
       />
       <Square
         shade="400"
-        name="grey"
+        name="Cloud"
         colorName="grey"
-        hex="0000"
-        hsla="000 000 000"
+        hex="#c5c5d6"
+        hsla="(240, 17%, 81%)"
       />
       <Square
         shade="300"
-        name="grey"
+        name="Cloud"
         colorName="grey"
-        hex="0000"
-        hsla="000 000 000"
+        hex="#dddde7"
+        hsla="(240, 17%, 89%)"
       />
       <Square
         shade="200"
-        name="grey"
+        name="Cloud"
         colorName="grey"
-        hex="0000"
-        hsla="000 000 000"
+        hex="#ececf1"
+        hsla="(240, 15%, 94%)"
       />
       <Square
         shade="100"
-        name="grey"
+        name="Cloud"
         colorName="grey"
-        hex="0000"
-        hsla="000 000 000"
+        hex="#f5f5f8"
+        hsla="(240, 18%, 97%)"
       />
     </Grid>
     </div>
