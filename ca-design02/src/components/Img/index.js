@@ -2,7 +2,7 @@ import React from 'react';
 
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import { StyledImage, Container } from './StyledImage'
+// import { StyledImage, Container } from './StyledImage'
 import largeImg from '../../Images/officeImages/cowomen_w_1076.jpg'
 import medImg from '../../Images/officeImages/cowomen_w_645.jpg'
 import smallImg from '../../Images/officeImages/cowomen_w_200.jpg'

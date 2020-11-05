@@ -1,33 +1,64 @@
-import React from 'react'
-// import { Link } from "react-router-dom";
-// import { HashLink } from 'react-router-hash-link';
+import React from "react";
 import { Link } from "react-scroll";
-import styled from 'styled-components';
+import styled from "styled-components";
+import theme from '../../theme'
 
-const UL = styled.ul`
+const Header = styled.header`
+position: fixed;
+top: 0;
+left:0;
+right: 0;
+background: ${theme.colors.grey['200']};
+z-index: 1000;
 
-.nav-item {
-  display: inline;
-  margin-left: 2rem;
-  color: #333;
-}
+  .hamburger-menu {
+    /* position: fixed; */
+    /* top: 20px;
+  right: 20px; */
+  margin-left: auto;
+    height: 32px;
+    width: 32px;
+    display: grid;
+    grid-template-rows: 4px 4px 4px;
+    align-content: space-around;
+    cursor: pointer;
+    z-index: 2;
+  }
 
-.nav-item:hover {
-  color: black;
-  cursor: pointer;
-}
+  .hamburger-menu span {
+    transition: 0.3s;
+    background: ${theme.colors.primary};
+  }
 
-.nav-item > .active {
+  .nav-item {
+    display: inline;
+    margin-left: 2rem;
+    color: #333;
+  }
+
+  .nav-item:hover {
+    color: black;
+    cursor: pointer;
+  }
+
+  .nav-item > .active {
     border-bottom: 1px solid #333;
-}
-`
+  }
+`;
 
 function Navigation() {
   return (
-    <div>
-      <nav>
-        <UL>
-        <li className="nav-item">
+    <Header>
+      <div>
+        <nav>
+
+          <div class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul>
+            <li className="nav-item">
               <Link
                 activeClass="active"
                 to="colors"
@@ -36,10 +67,10 @@ function Navigation() {
                 offset={-70}
                 duration={500}
               >
-               Colors
+                Colors
               </Link>
             </li>
-        <li className="nav-item">
+            <li className="nav-item">
               <Link
                 activeClass="active"
                 to="pattern"
@@ -51,7 +82,7 @@ function Navigation() {
                 Pattern
               </Link>
             </li>
-        <li className="nav-item">
+            <li className="nav-item">
               <Link
                 activeClass="active"
                 to="typography"
@@ -63,7 +94,7 @@ function Navigation() {
                 Typography
               </Link>
             </li>
-        <li className="nav-item">
+            <li className="nav-item">
               <Link
                 activeClass="active"
                 to="links"
@@ -75,7 +106,7 @@ function Navigation() {
                 Links
               </Link>
             </li>
-        <li className="nav-item">
+            <li className="nav-item">
               <Link
                 activeClass="active"
                 to="images"
@@ -87,10 +118,11 @@ function Navigation() {
                 Images
               </Link>
             </li>
-        </UL>
-      </nav>
-    </div>
-  )
+          </ul>
+        </nav>
+      </div>
+    </Header>
+  );
 }
 
 export { Navigation };
