@@ -9,10 +9,10 @@ function Button(props) {
     </StyledButton>
   )
 }
-function Buttons () {
-
+function Buttons (props) {
+console.log(props)
   return (
-    <Container>
+    <Container id={props.id}>
     <Button primary >Primary</Button>
     <Button secondary >Secondary</Button>
     <Button ghost >Ghost</Button>

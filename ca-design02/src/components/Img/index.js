@@ -7,7 +7,9 @@ import largeImg from '../../Images/officeImages/cowomen_w_1076.jpg'
 import medImg from '../../Images/officeImages/cowomen_w_645.jpg'
 import smallImg from '../../Images/officeImages/cowomen_w_200.jpg'
 
-const Images = () => (
+const Images = (props) => (
+  <div id={props.id}>
+
   <figure>
     <picture>
     <LazyLoadImage
@@ -23,6 +25,7 @@ const Images = () => (
             </figcaption>
 
   </figure>
+  </div>
 );
 
 export { Images };

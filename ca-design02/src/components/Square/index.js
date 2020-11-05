@@ -37,9 +37,9 @@ const Square = (props) => {
   );
 };
 
-const ColorBoxes = () => {
+const ColorBoxes = (props) => {
   return (
-    <>
+    <div id={props.id}>
        <h3>Primary</h3>
     <Grid>
       <Square
@@ -154,7 +154,7 @@ const ColorBoxes = () => {
         hsla="000 000 000"
       />
     </Grid>
-    </>
+    </div>
   );
 };
 

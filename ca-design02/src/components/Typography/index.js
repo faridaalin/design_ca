@@ -26,7 +26,7 @@ const Typography = () => {
       <Container>
         <p>Type Pairing</p>
 
-        <H2>Article Heading</H2>
+        <H2>- Typography hierarchy, Headings & paragraph (h1-h4) With the WCAG approved contrast ratio displayed.</H2>
         <Subtitle>Article Subheading goes here</Subtitle>
         <Body>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. At eget

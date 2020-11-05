@@ -9,10 +9,10 @@ function Link(props) {
     </StyledLink>
   )
 }
-function Links () {
+function Links (props) {
 
   return (
-    <Container>
+    <Container id={props.id}>
     <Link className="default" default href="" >Link default</Link>
     <Link className="hover" hover href="" >Link hovered</Link>
     <Link className="active" active href="" >Link pressed</Link>

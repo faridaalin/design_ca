@@ -61,7 +61,12 @@ const theme = {
     xl: '1200px',
   },
 }
-
+ theme.sizes = [8, 16, 24, 32]
+ theme.cTest = {
+  text: 'black',
+  background: 'white',
+  primary: 'rebeccapurple',
+};
 
 
 

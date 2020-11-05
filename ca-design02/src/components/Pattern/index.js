@@ -5,7 +5,7 @@ import svgPattern from './texture.svg'
 const Pattern = (props) => {
 
   return (
-    <Container  style={{ backgroundImage: `url(${svgPattern})` }}>
+    <Container id={props.id} style={{ backgroundImage: `url(${svgPattern})` }}>
       <div className="empty"></div>
       <div>
         <div className="info">

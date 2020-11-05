@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import theme from "./../theme";
 
 const GlobalStyle = createGlobalStyle`
 * {
@@ -6,10 +7,11 @@ const GlobalStyle = createGlobalStyle`
   margin: 0;
     padding: 0;
 }
+
+
   body {
-    font-family: ${({ theme: { fontFamily } }) => fontFamily.text};
-    color: ${({ theme: { colors } }) => colors.black[400]};
-    background: ${({ theme: { colors } }) => colors.grey["100"]};
+    font-family: ${theme.fontFamily.text};
+    color: ${theme.colors.black[500]};
   }
 
   img {
@@ -17,13 +19,13 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h1, h2, h3, h4 {
-    font-family: ${({ theme: { fontFamily } }) => fontFamily.header};
-    margin-top: ${({ theme: { margin } }) => margin.xs};
-    margin-bottom: ${({ theme: { margin } }) => margin.xs};
+    font-family: ${theme.fontFamily.header};
+    margin-top: ${theme.margin.xs};
+    margin-bottom:  ${theme.margin.xs};
   }
   p {
-    margin-top: ${({ theme: { margin } }) => margin.xs};
-margin-bottom: ${({ theme: { margin } }) => margin.xs};
+    margin-top:  ${theme.margin.xs};
+    margin-bottom:  ${theme.margin.xs};
   }
 
 `;
