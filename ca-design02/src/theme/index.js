@@ -44,7 +44,7 @@ const theme = {
     p7: '3rem'
   },
   fontFamily: {
-    header: `'Raleway', sans-serif`,
+    header: `'Josefin Sans', sans-serif`,
     text: `'Work Sans', sans-serif`,
   },
   fontWeight: {

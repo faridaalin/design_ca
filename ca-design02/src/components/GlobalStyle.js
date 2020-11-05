@@ -20,9 +20,11 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h1, h2, h3, h4 {
-    font-family: ${theme.fontFamily.header};
-    margin-top: ${theme.margin.xs};
-    margin-bottom:  ${theme.margin.xs};
+   font-family:  ${theme.fontFamily.header};
+    margin: 1rem 0;
+
+    /* margin-top: ${theme.margin.xs};
+    margin-bottom:  ${theme.margin.xs}; */
   }
   p {
     margin-top:  ${theme.margin.xs};
