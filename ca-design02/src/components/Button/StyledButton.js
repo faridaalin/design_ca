@@ -67,7 +67,7 @@ color: ${({ theme}) => theme.colors.blue['400']};
 
 const linkButtonStyles = css`
 background: transparent;
-color:  ${({ theme}) => theme.colors.primary};
+color: ${({ theme}) => theme.colors.secondary};
 position: relative;
 padding: 0;
 padding-top: 0.5rem;
@@ -77,7 +77,7 @@ align-self: center;
 &::after {
   content: '';
     width: 100%;
-    background: ${({ theme}) => theme.colors.primary};
+    background: ${({ theme}) => theme.colors.secondary};
     position: absolute;
     left: 0;
     bottom: 0;
@@ -91,12 +91,12 @@ align-self: center;
   }
 
   &:active {
-    color:  ${({ theme}) => theme.colors.blue['500']};
+    color:   ${({ theme}) => theme.colors.black['200']};
 
   }
 
   &:focus, &:focus::after  {
-    outline-color: ${({ theme}) => theme.colors.blue['100']};
+    outline-color:  ${({ theme}) => theme.colors.black['200']};
 
   }
 `

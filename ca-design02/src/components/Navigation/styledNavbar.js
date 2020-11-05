@@ -14,6 +14,7 @@ padding: 1rem;
 .logo {
   font-size: 1.5rem;
   font-weight:  ${theme.fontWeight.bold};
+  color: ${theme.colors.blue['500']};
 }
 
   .hamburger-menu {

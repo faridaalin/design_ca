@@ -1,4 +1,5 @@
 import styled from "styled-components/macro";
+import theme from "./../../theme";
 
 const Container = styled.div`
   height: 100%;
@@ -18,7 +19,10 @@ const StyledSquare = styled.div`
 const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 0.5rem;
+  gap: 1rem;
+  margin-top: ${theme.margin.xs};
+  margin-bottom:  ${theme.margin.l};
+  padding-bottom:  ${theme.padding.p4};
 `;
 
 export {Container, StyledSquare, Grid}

@@ -1,7 +1,7 @@
 import React from 'react';
 import {StyledButton, Container} from './StyledButton'
 
-function Button(props) {
+export function Button(props) {
 
   return (
     <StyledButton {...props}>

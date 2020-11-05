@@ -42,7 +42,7 @@ function Navigation() {
                 to="colors"
                 spy={true}
                 smooth={true}
-                offset={-120}
+                offset={-70}
                 duration={500}
                 onClick={hideMenu}
               >
@@ -55,7 +55,7 @@ function Navigation() {
                 to="pattern"
                 spy={true}
                 smooth={true}
-                offset={-120}
+                offset={-100}
                 duration={500}
                 onClick={hideMenu}
               >
@@ -68,7 +68,7 @@ function Navigation() {
                 to="typography"
                 spy={true}
                 smooth={true}
-                offset={-120}
+                offset={-10}
                 duration={500}
                 onClick={hideMenu}
               >
@@ -81,7 +81,7 @@ function Navigation() {
                 to="links"
                 spy={true}
                 smooth={true}
-                offset={-120}
+                offset={-70}
                 duration={500}
                 onClick={hideMenu}
               >
@@ -94,7 +94,7 @@ function Navigation() {
                 to="images"
                 spy={true}
                 smooth={true}
-                offset={-120}
+                offset={-10}
                 duration={500}
                 onClick={hideMenu}
               >

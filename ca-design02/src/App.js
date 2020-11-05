@@ -1,35 +1,37 @@
 import "./App.css";
-import { ColorBoxes, Layout, Pattern, Typography, Buttons, Links, Images, Metatags, Navigation } from "./components";
+import { ColorBoxes, Article, Pattern, Typography, Buttons, Links, Images, Metatags, Navigation } from "./components";
+
+
 
 function App() {
   return (
     <main className="App">
       <Metatags />
       <Navigation />
-      <Layout title="Color scheme"  >
-        <ColorBoxes id="colors" />
-      </Layout>
+      <Article title="Color scheme" id="colors" >
+        <ColorBoxes />
+      </Article>
 
-      <Layout title="Pattern">
-        <Pattern  id="pattern"/>
-      </Layout>
+      <Article title="Pattern" id="pattern" >
+        <Pattern />
+      </Article>
 
-      <Layout title="Typography">
-        <Typography id="typography" />
-      </Layout>
+      <Article title="Typography" id="typography" >
+        <Typography />
+      </Article>
 
-      <Layout title="Buttons" >
-        <Buttons id="buttons" />
-      </Layout>
+      <Article title="Buttons" id="buttons">
+        <Buttons />
+      </Article>
 
-      <Layout title="Links" >
-        <Links id="links" />
-      </Layout>
+      <Article title="Links" id="links">
+        <Links />
+      </Article>
 
 
-      <Layout title="Images">
-        <Images id="images" />
-      </Layout>
+      <Article title="Images" id="images" >
+        <Images />
+      </Article>
     </main>
   );
 }

@@ -3,7 +3,7 @@
 const theme = {
   colors: {
     primary: '#364DBF',
-    secondary: '#2d3232',
+    secondary: '#111313',
     blue: {
       100: '#6073D2',
       200: '#5065CE',
@@ -27,7 +27,7 @@ const theme = {
     },
 
   },
-  fontSizes: [12, 14, 16, 18, 24, 26],
+  fontSizes: [0.5, 1, 1.5, 2, 2.5, 3],
   margin: {
     xs: '0.5rem',
     s: '1rem',

@@ -1,5 +1,5 @@
 export * from './Square'
-export * from './Layout'
+export * from './Article'
 export * from './Pattern'
 export * from './Typography'
 export * from './Button'

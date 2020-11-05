@@ -1,24 +1,24 @@
 import React from "react";
 import { Container } from "./StyledPattern";
-import svgPattern from './texture.svg'
+import svgPattern from "./polka-dots.svg";
+import {Button} from '../Button'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
-const Pattern = (props) => {
-
+const Pattern = () => {
   return (
-    <Container id={props.id} style={{ backgroundImage: `url(${svgPattern})` }}>
+    <Container style={{ backgroundImage: `url(${svgPattern})` }}>
       <div className="empty"></div>
       <div>
-        <div className="info">
-          <p>Description</p>
+        <div className="pattern-description">
+          <h3>How to use</h3>
           <p>
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum."
+            The pattern is to be with used with significant amount of whitespace and only for section with little text and where it is room for decoration.
+             The pattern especially great for areas less that needs playfulness or a modern
+            twist. Can be used with text, where the text has solid background
+            color or  with an image. All content should must have and title and link or CTA.
           </p>
+          <Button buttonLink >Button Link <FontAwesomeIcon icon={faArrowRight} /> </Button>
         </div>
       </div>
     </Container>

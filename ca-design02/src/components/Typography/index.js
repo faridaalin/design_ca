@@ -10,10 +10,10 @@ import {
   ButtonText,
 } from "./StyledTypography";
 
-const Typography = (props) => {
+const Typography = () => {
   return (
     <>
-      <Container id={props.id}>
+      <Container >
         <H1>Title/Header 1</H1>
         <H2>Header 2</H2>
         <H3>Header 3</H3>

@@ -30,7 +30,7 @@ const getLinkStyles = (props) => {
 }
 
 
-export const StyledLink = styled.a`
+export const StyledInlineLink = styled.a`
   color: ${({ theme }) => theme.colors.primary};
   border-bottom: 1px solid transparent;
   text-decoration: none;
@@ -40,6 +40,11 @@ export const StyledLink = styled.a`
   align-self: center;
 
   ${getLinkStyles}
+
+`;
+
+export const StyledIndepLink = styled.a`
+
 
 `;
 

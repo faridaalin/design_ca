@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import theme from '../../theme'
 
-const Article = styled.article`
+const StyledArticle = styled.article`
 max-width: 1000px;
 margin: 0 auto;
 padding: 2rem;
@@ -14,13 +14,14 @@ h2 {
 }
 `
 
-function Layout({title, children}) {
+function Article({title, children, id}) {
+
   return (
-    <Article>
+    <StyledArticle id={id} >
       <h2>{title}</h2>
       {children}
-    </Article>
+    </StyledArticle>
   )
 }
 
-export {Layout}
+export {Article}
