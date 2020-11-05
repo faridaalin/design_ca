@@ -12,6 +12,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: ${theme.fontFamily.text};
     color: ${theme.colors.black[500]};
+    overflow-x: hidden;
   }
 
   img {

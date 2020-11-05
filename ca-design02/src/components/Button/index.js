@@ -10,7 +10,6 @@ function Button(props) {
   )
 }
 function Buttons (props) {
-console.log(props)
   return (
     <Container id={props.id}>
     <Button primary >Primary</Button>
