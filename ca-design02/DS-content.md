@@ -59,7 +59,7 @@ Buttons are clickable elements that are used to trigger actions. They communicat
 
 .btn--secondary → a subtle style version, used for secondary actions or in combo with the primary/accent button.
 
-For secondary actions on each page; these can only be used  in conjunction with a primary button
+For secondary actions on each page; these can only be used in conjunction with a primary button
 
 Ghost - For the least pronounced actions; often used in conjunction with a primary button.
 
