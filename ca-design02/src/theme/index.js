@@ -54,6 +54,7 @@ const theme = {
     medium: 500, //header
     bold: 700, // header
   },
+  transition: [0.2, 0.3, 0.4],
   breakpoints: {
     sm: '576px',
     md: '768px',

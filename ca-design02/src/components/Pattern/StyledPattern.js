@@ -1,13 +1,12 @@
 import styled from "styled-components/macro";
-import theme from '../../theme'
-
+import theme from "../../theme";
 
 export const Container = styled.div`
   padding: 2rem 1rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 0.5rem;
-  background: ${(props) => props.theme.colors.grey[100]};
+  background: ${theme.colors.grey[100]};
   background-size: auto;
   width: 100vw;
   height: 100%;
@@ -21,10 +20,7 @@ export const Container = styled.div`
   .pattern-description {
     background-color: ${theme.colors.grey[200]};
     padding: ${theme.padding.p3} ${theme.padding.p5};
-    font-size: ${theme.fontSizes[1]}rem ;
+    font-size: ${theme.fontSizes[1]}rem;
     color: ${theme.colors.black[400]};
-    p {
-
-    }
   }
 `;

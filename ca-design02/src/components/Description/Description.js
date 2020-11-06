@@ -1,16 +1,13 @@
-import React from 'react';
-import StyledDescription from './styledDescription'
+import React from "react";
+import StyledDescription from "./styledDescription";
 
 
-function Description({children}) {
-  console.log(children)
+function Description({ children }) {
   return (
     <StyledDescription>
-    <p>
-{children}
-    </p>
-  </StyledDescription>
-  )
+      <p>{children}</p>
+    </StyledDescription>
+  );
 }
 
-export default Description
+export default Description;

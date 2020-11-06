@@ -21,10 +21,8 @@ const Grid = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 1rem;
   margin-top: ${theme.margin.xs};
-  margin-bottom:  ${theme.margin.l};
-  padding-bottom:  ${theme.padding.p4};
+  margin-bottom: ${theme.margin.l};
+  padding-bottom: ${theme.padding.p4};
 `;
 
-
-
-export {Container, StyledSquare, Grid}
+export { Container, StyledSquare, Grid };

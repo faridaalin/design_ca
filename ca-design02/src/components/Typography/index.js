@@ -97,8 +97,9 @@ const Typography = () => {
       <ContainerFPairing>
         <h3>Type Pairing</h3>
         <Description>
-          These example articles demonsrates how to pair headings, subheadings and
-          body text. Content should be limited to 75ch, line-height 1.54 and always left aligned.
+          These example articles demonsrates how to pair headings, subheadings
+          and body text. Content should be limited to 75ch, line-height 1.54 and
+          always left aligned.
         </Description>
         <H2>Article Heading</H2>
         <Subtitle>Article Subheading goes here</Subtitle>

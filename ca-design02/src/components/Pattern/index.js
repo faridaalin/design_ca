@@ -1,8 +1,8 @@
 import React from "react";
+import codeBlock from "../code";
 import { Container } from "./StyledPattern";
 import svgPattern from "./polka-dots.svg";
-import {IndependentLink} from '../Links'
-
+import { IndependentLink } from "../Links";
 
 const Pattern = () => {
   return (
@@ -12,14 +12,17 @@ const Pattern = () => {
         <div className="pattern-description">
           <h3>How to use</h3>
           <p>
-            The pattern is to be with used with significant amount of whitespace and only for section with little text and where it is room for decoration.
-             The pattern especially great for areas less that needs playfulness or a modern
-            twist. Can be used with text, where the text has solid background
-            color or  with an image. All content should must have and title and link or CTA.
+            The pattern is to be with used with significant amount of whitespace
+            and only for section with little text and where it is room for
+            decoration. The pattern especially great for areas less that needs
+            playfulness or a modern twist. Can be used with text, where the text
+            has solid background color or with an image. All content should must
+            have and title and link or CTA.
           </p>
-          <IndependentLink  indepDefault >Independent link </IndependentLink>
+          <IndependentLink indepDefault>Independent link </IndependentLink>
         </div>
       </div>
+      <codeBlock />
     </Container>
   );
 };

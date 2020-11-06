@@ -19,12 +19,12 @@ function Buttons(props) {
         sparely.
       </Description>
       <Description>
-        Use the the secondary button for all other actions on each page.
-        The secondary button can be used in combonation with other buttons.
+        Use the the secondary button for all other actions on each page. The
+        secondary button can be used in combonation with other buttons.
       </Description>
       <Description>
-        The ghost is least pronounced actions and should be used  in combonation with
-        a primary or secondary button.
+        The ghost is least pronounced actions and should be used in combonation
+        with a primary or secondary button.
       </Description>
       <Container id={props.id}>
         <Button primary>Primary</Button>

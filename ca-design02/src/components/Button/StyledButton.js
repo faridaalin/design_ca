@@ -1,83 +1,83 @@
-import styled, {css} from "styled-components/macro";
-
+import styled, { css } from "styled-components/macro";
+import theme from "../../theme";
 
 const secondaryButtonStyles = css`
-  background: ${({ theme}) => theme.colors.secondary};
-  color: ${({ theme}) => theme.colors.grey['300']};
+  background: ${theme.colors.secondary};
+  color: ${theme.colors.grey["300"]};
 
   &:hover {
-    background: ${({ theme}) => theme.colors.black['200']};
-    color: ${({ theme}) => theme.colors.grey['100']};
+    background: ${theme.colors.black["200"]};
+    color: ${theme.colors.grey["100"]};
   }
 
   &:active {
-    background: ${({ theme}) => theme.colors.black['300']};
+    background: ${theme.colors.black["300"]};
   }
   &:focus {
-    background: ${({ theme}) => theme.colors.black['500']};
+    background: ${theme.colors.black["500"]};
     outline: none;
-    color: ${({ theme}) => theme.colors.grey['100']};
-    box-shadow: 0 0 0 2px white,
-    0 0 0 4px ${({ theme}) => theme.colors.black['100']};
+    color: ${theme.colors.grey["100"]};
+    box-shadow: 0 0 0 2px ${theme.colors.grey["100"]},
+      0 0 0 4px ${theme.colors.black["100"]};
   }
-`
+`;
 const primaryButtonStyles = css`
-  background: ${({ theme}) => theme.colors.primary};
-  color: ${({ theme}) => theme.colors.grey['300']};
+  background: ${theme.colors.primary};
+  color: ${theme.colors.grey["300"]};
 
   &:hover {
-    background: ${({ theme}) => theme.colors.blue['300']};
-    color: ${({ theme}) => theme.colors.grey['100']};
+    background: ${theme.colors.blue["300"]};
+    color: ${theme.colors.grey["100"]};
   }
 
   &:active {
-    background: ${({ theme}) => theme.colors.blue['500']};
+    background: ${theme.colors.blue["500"]};
   }
   &:focus {
-    background: ${({ theme}) => theme.colors.blue['500']};
+    background: ${theme.colors.blue["500"]};
     outline: none;
-    color: ${({ theme}) => theme.colors.grey['100']};
-    box-shadow: 0 0 0 2px white,
-    0 0 0 4px ${({ theme}) => theme.colors.blue['100']};
+    color: ${theme.colors.grey["100"]};
+    box-shadow: 0 0 0 2px white, 0 0 0 4px ${theme.colors.blue["100"]};
   }
-`
+`;
 
 const ghostButtonStyles = css`
-border-color: ${({ theme}) => theme.colors.primary};
-background: transparent;
-color: ${({ theme}) => theme.colors.blue['400']};
+  border-color: ${theme.colors.primary};
+  background: transparent;
+  color: ${theme.colors.blue["400"]};
 
-&:hover {
-    background: ${({ theme}) => theme.colors.blue['400']};
-    color: ${({ theme}) => theme.colors.grey['100']};
+  &:hover {
+    background: ${theme.colors.blue["400"]};
+    color: ${theme.colors.grey["100"]};
   }
 
   &:active {
-    background: ${({ theme}) => theme.colors.blue['500']};
-    color: ${({ theme}) => theme.colors.grey['100']};
+    background: ${theme.colors.blue["500"]};
+    color: ${theme.colors.grey["100"]};
   }
   &:focus {
-    background: ${({ theme}) => theme.colors.blue['500']};
+    background: ${theme.colors.blue["500"]};
     outline: none;
-    color: ${({ theme}) => theme.colors.grey['100']};
-    box-shadow: 0 0 0 2px white,
-    0 0 0 4px ${({ theme}) => theme.colors.blue['100']};
+    color: ${theme.colors.grey["100"]};
+    box-shadow: 0 0 0 2px white, 0 0 0 4px ${theme.colors.blue["100"]};
   }
-`
+`;
 
 const linkButtonStyles = css`
-background: transparent;
-color: ${({ theme}) => theme.colors.secondary};
-position: relative;
-padding: 0;
-padding-top: 0.5rem;
-padding-bottom: 0.5rem;
-align-self: center;
+  background: transparent;
+  color: ${theme.colors.secondary};
+  position: relative;
+  padding: 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  align-self: center;
+  white-space: nowrap;
+  cursor: pointer;
 
-&::after {
-  content: '';
+  &::after {
+    content: "";
     width: 100%;
-    background: ${({ theme}) => theme.colors.secondary};
+    background: ${theme.colors.secondary};
     position: absolute;
     left: 0;
     bottom: 0;
@@ -85,47 +85,48 @@ align-self: center;
     z-index: 1;
   }
 
-
-&:hover, &:hover::after {
-  opacity: 0.8;
+  &:hover,
+  &:hover::after {
+    opacity: 0.8;
   }
 
   &:active {
-    color:   ${({ theme}) => theme.colors.black['200']};
-
+    color: ${theme.colors.black["200"]};
   }
 
-  &:focus, &:focus::after  {
-    outline-color:  ${({ theme}) => theme.colors.black['200']};
-
+  &:focus,
+  &:focus::after {
+    outline-color: ${theme.colors.black["200"]};
   }
-`
-
-const getButtonStyles = (props) => {
-  return props.primary ? primaryButtonStyles
-      : props.ghost ? ghostButtonStyles
-      : props.buttonLink ? linkButtonStyles
-      : secondaryButtonStyles
-
-}
-
-export const StyledButton = styled.button`
-padding: ${({ theme: { padding } }) => `${padding.p2} ${padding.p5}`};
-font-size: 12px;
-font-weight: ${({theme: {fontWeight}}) => fontWeight.bold};
-text-transform: uppercase;
-letter-spacing: 0.5px;
-border: none;
-border-radius: 100px;
-border: 1px solid transparent;
-margin-bottom: 1rem;
-margin-right: 1rem;
-white-space: nowrap;
-cursor: pointer;
-
-${getButtonStyles}
 `;
 
+const getButtonStyles = (props) => {
+  return props.primary
+    ? primaryButtonStyles
+    : props.ghost
+    ? ghostButtonStyles
+    : props.buttonLink
+    ? linkButtonStyles
+    : secondaryButtonStyles;
+};
+
+export const StyledButton = styled.button`
+  padding: ${`${theme.padding.p2} ${theme.padding.p5}`};
+  font-size: 12px;
+  font-weight: ${theme.fontWeight.bold};
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: none;
+  border-radius: 100px;
+  border: 1px solid transparent;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: ${theme.transition[0]}s all;
+
+  ${getButtonStyles}
+`;
 
 export const Container = styled.div`
   display: flex;
