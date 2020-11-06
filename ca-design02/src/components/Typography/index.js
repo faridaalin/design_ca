@@ -18,8 +18,8 @@ const Typography = () => {
       <Table>
 
       <tr>
-          <th>WCAG</th>
-          <th>TEXT</th>
+          <th>WCAG Ratio</th>
+          <th>Typography hierarchy</th>
         </tr>
       <tr>
           <td className="wcag-desc"><p>AA 17.13</p></td>
@@ -32,7 +32,7 @@ const Typography = () => {
         </tr>
       <tr>
           <td><p>AA 14.13</p></td>
-          <td><H3>Header 4</H3></td>
+          <td><H3>Header 3</H3></td>
         </tr>
       <tr>
           <td><p>AA 17.13</p></td>

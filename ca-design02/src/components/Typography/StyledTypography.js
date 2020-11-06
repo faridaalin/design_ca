@@ -5,6 +5,11 @@ import theme from '../../theme'
 export const Container = styled.div`
 min-height: 100vh;
 
+h1, h2, h3, h4, p {
+  margin: 0;
+  padding: ${theme.padding.p4};
+}
+
 `;
 export const H1 = styled.h1`
 font-size: 34px;
@@ -104,6 +109,11 @@ export const Table = styled.table`
  border-collapse: collapse;
   width: 100%;
 
+  th {
+    padding: 0 0 ${theme.padding.p4};
+    color: ${theme.colors.black[200]};
+  }
+
   td {
   text-align: left;
   padding: 8px;
@@ -111,7 +121,7 @@ export const Table = styled.table`
 
   td p {
     font-size: calc(${theme.fontSizes[1]}rem + 0.2vw);
-  font-weight: ${theme.fontWeight.medium};;
+  font-weight: ${theme.fontWeight.medium};
 }
 
 
