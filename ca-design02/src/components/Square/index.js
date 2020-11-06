@@ -3,8 +3,9 @@ import {
   Container,
   StyledSquare,
   Grid,
-  Description,
+
 } from "./StyledColorsAquare";
+import Description from '../Description/Description'
 
 const Square = (props) => {
   const { colorName, shade } = props;
@@ -24,20 +25,17 @@ const Square = (props) => {
 const ColorBoxes = (props) => {
   return (
     <div id={props.id}>
-      <Description className="description">
-        <p>
+      <Description>
           JURK design system includes three main colors. A modes dark blue as
           primary color, black and white as both secondary and complementary
           colors. Black and cloud is the mainly used and is therefore more
           prominent, while dark blue is used for important areas and areas that
           need attention and focus.
-        </p>
+
       </Description>
-      <Description className="description">
-        <p>
+      <Description>
           Dark blue is JURK's primary color and is used for areas where
           attention and differentiation is important. Blue is a color that is
-        </p>
       </Description>
       <h3>Dark Blue</h3>
       <Grid>
@@ -80,11 +78,9 @@ const ColorBoxes = (props) => {
 
       <h3>Black</h3>
       <Description className="description">
-        <p>
           Black is modern and edgy color and also a color that represents
           strength, formality, and intelligence. Black is maily to be used as
           color on text and secondary button and independent links.
-        </p>
       </Description>
       <Grid>
         <Square
@@ -125,11 +121,9 @@ const ColorBoxes = (props) => {
       </Grid>
       <h3>Cloud</h3>
       <Description className="description">
-        <p>
           Cloud has range of seveal tints and works well in combination with Black and Modest Blue
           Cload can be used on areas that needs to be toned down or balances out other colors.
           Mainly Cloud is used as a background color. The tints of Cloud is great for differentiating sections
-        </p>
       </Description>
       <Grid>
         <Square

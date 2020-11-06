@@ -5,9 +5,11 @@ import theme from '../../theme'
 export const Container = styled.div`
 min-height: 100vh;
 
-h1, h2, h3, h4, p {
-  margin: 0;
-  padding: ${theme.padding.p4};
+`;
+export const ContainerFPairing = styled.div`
+min-height: 100vh;
+h2 {
+  margin-bottom: ${theme.margin.xs}
 }
 
 `;
@@ -73,6 +75,7 @@ ${up('sm')} {
 export const Body = styled.p`
 font-size: 14px;
 font-weight: ${theme.fontWeight.regular};
+max-width: 75ch;
 
 ${up('sm')} {
   font-size: 16px;
@@ -108,10 +111,17 @@ ${up('md')} {
 export const Table = styled.table`
  border-collapse: collapse;
   width: 100%;
+  h1, h2, h3, h4, p {
+  margin: 0;
+  padding: ${theme.padding.p4};
+}
+margin-bottom: ${theme.margin.l};
+
 
   th {
-    padding: 0 0 ${theme.padding.p4};
+    padding: ${theme.padding.p4} ${theme.padding.p2};
     color: ${theme.colors.black[200]};
+    background-color:  ${theme.colors.grey[300]};
   }
 
   td {
@@ -129,10 +139,13 @@ tr:nth-child(even) {
   background-color: ${theme.colors.grey[200]};
 }
 
-/* .wcag-desc {
-  font-size: ${theme.fontSizes[2]};
-  font-weight: ${theme.fontWeight.medium};;
-} */
+${up('md')} {
+  /* tr, td {
+    display: block
+  } */
+  }
+
+
 `;
 
 

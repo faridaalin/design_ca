@@ -78,6 +78,19 @@ function Navigation() {
             <li className="nav-item">
               <Link
                 activeClass="active"
+                to="buttons"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+                onClick={hideMenu}
+              >
+                Buttons
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                activeClass="active"
                 to="links"
                 spy={true}
                 smooth={true}

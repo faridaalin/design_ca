@@ -25,9 +25,6 @@ const Grid = styled.div`
   padding-bottom:  ${theme.padding.p4};
 `;
 
-const Description = styled.div`
-max-width: 60ch;
-margin-bottom:  ${theme.margin.l};
-`;
 
-export {Container, StyledSquare, Grid, Description}
+
+export {Container, StyledSquare, Grid}
