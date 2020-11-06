@@ -3,6 +3,7 @@ import { up } from 'styled-breakpoints';
 import theme from '../../theme'
 
 export const Container = styled.div`
+min-height: 100vh;
 
 `;
 export const H1 = styled.h1`
@@ -40,6 +41,17 @@ ${up('sm')} {
   }
 ${up('md')} {
   font-size: 28px;
+  }
+`;
+export const H4 = styled.h4`
+font-size: 18px;
+font-weight: ${theme.fontWeight.bold};
+
+${up('sm')} {
+  font-size: 20px;
+  }
+${up('md')} {
+  font-size: 22px;
   }
 `;
 
@@ -87,6 +99,30 @@ ${up('sm')} {
 ${up('md')} {
   font-size: 16px;
   }
+`;
+export const Table = styled.table`
+ border-collapse: collapse;
+  width: 100%;
+
+  td {
+  text-align: left;
+  padding: 8px;
+}
+
+  td p {
+    font-size: calc(${theme.fontSizes[1]}rem + 0.2vw);
+  font-weight: ${theme.fontWeight.medium};;
+}
+
+
+tr:nth-child(even) {
+  background-color: ${theme.colors.grey[200]};
+}
+
+/* .wcag-desc {
+  font-size: ${theme.fontSizes[2]};
+  font-weight: ${theme.fontWeight.medium};;
+} */
 `;
 
 
