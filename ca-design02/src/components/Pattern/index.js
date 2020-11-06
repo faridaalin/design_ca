@@ -1,9 +1,8 @@
 import React from "react";
 import { Container } from "./StyledPattern";
 import svgPattern from "./polka-dots.svg";
-import {Button} from '../Button'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import {IndependentLink} from '../Links'
+
 
 const Pattern = () => {
   return (
@@ -18,7 +17,7 @@ const Pattern = () => {
             twist. Can be used with text, where the text has solid background
             color or  with an image. All content should must have and title and link or CTA.
           </p>
-          <Button buttonLink >Button Link <FontAwesomeIcon icon={faArrowRight} /> </Button>
+          <IndependentLink  indepDefault >Independent link </IndependentLink>
         </div>
       </div>
     </Container>
