@@ -10,6 +10,7 @@ right: 0;
 background: ${theme.colors.grey['200']};
 z-index: 1000;
 padding: 1rem;
+box-shadow: -4px -7px 13px  ${theme.colors.black[200]};
 
 .logo {
   font-size: 1.5rem;

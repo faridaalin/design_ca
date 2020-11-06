@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: ${theme.fontFamily.text};
     color: ${theme.colors.black[500]};
     overflow-x: hidden;
-    background-color: ${theme.colors.grey[100]};
+    background-color: ${theme.colors.grey[200]};
     line-height: 1.5;
   }
 

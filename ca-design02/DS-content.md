@@ -1,22 +1,5 @@
 
 
---- Buttons ----
-Buttons are clickable elements that are used to trigger actions. They communicate calls to action to the user and allow users to interact with pages in a variety of ways. Button labels express what action will occur when the user interacts with it.
-
-.btn--primary - the main call-to-action button style.For the principal call to action on the page. Primary buttons should only appear once per screen (not including the application header or in a modal dialog).
-
-.btn--secondary → a subtle style version, used for secondary actions or in combo with the primary/accent button.
-
-For secondary actions on each page; these can only be used in conjunction with a primary button
-
-Ghost - For the least pronounced actions; often used in conjunction with a primary button.
-
-When to use
-Use buttons to communicate actions users can take and to allow users to interact with the page. Each page should have one primary button, and any remaining calls to action should be represented as lower emphasis buttons
-
-
-The most important thing is to establish a visual hierarchy between the buttons in your UI. 
-
 --- Links ----
 
 Links are used as navigational elements. They may appear on their own, within a sentence or paragraph, or directly following the content.
