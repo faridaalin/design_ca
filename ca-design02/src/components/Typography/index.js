@@ -11,10 +11,10 @@ import {
   ButtonText,
   Table,
   ContainerFPairing,
-  TableContainer
+  TableContainer,
 } from "./StyledTypography";
 import Description from "../Description/Description";
-import {code} from './code'
+import { code } from "./code";
 import Code from "../code";
 
 const Typography = () => {
@@ -25,77 +25,85 @@ const Typography = () => {
         for main text. The typography can be applied in either black or white,
         unsless it is an inline link, then use primary color.
       </Description>
+      <Description>
+        Josefin Sans font is designed by Santiago Orozco. It is a sans serif and
+        has 10 variants.
+      </Description>
+      <Description>
+        Work Sans is a typeface based loosely on early Grotesques and designed by Wei Huang. This typeface has
+        10 weights
+      </Description>
       <TableContainer>
-      <Table>
-        <tr className="tr-head">
-          <th>WCAG Ratio</th>
-          <th>Typography hierarchy</th>
-        </tr>
-        <tr>
-          <td className="wcag-desc">
-            <p>AA 15.83</p>
-          </td>
-          <td>
-            <H1>Title/Header 1</H1>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <p>AA 15.83</p>
-          </td>
-          <td>
-            <H2>Header 2</H2>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <p>AA 13.61</p>
-          </td>
-          <td>
-            <H3>Header 3</H3>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <p>AA 15.83</p>
-          </td>
-          <td>
-            <H4>Header 4</H4>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <p>AA 15.83</p>
-          </td>
-          <td>
-            <Subtitle>Subtitle/Body Large</Subtitle>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <p>AA 15.83</p>
-          </td>
-          <td>
-            <Body>Body</Body>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <p>AA 15.83</p>
-          </td>
-          <td>
-            <SmallText>Small text</SmallText>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <p>AA 15.83</p>
-          </td>
-          <td>
-            <ButtonText>Button Text</ButtonText>
-          </td>
-        </tr>
-      </Table>
+        <Table>
+          <tr className="tr-head">
+            <th>WCAG Ratio</th>
+            <th>Typography hierarchy</th>
+          </tr>
+          <tr>
+            <td className="wcag-desc">
+              <p>AA 15.83</p>
+            </td>
+            <td>
+              <H1>Title/Header 1</H1>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>AA 15.83</p>
+            </td>
+            <td>
+              <H2>Header 2</H2>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>AA 13.61</p>
+            </td>
+            <td>
+              <H3>Header 3</H3>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>AA 15.83</p>
+            </td>
+            <td>
+              <H4>Header 4</H4>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>AA 15.83</p>
+            </td>
+            <td>
+              <Subtitle>Subtitle/Body Large</Subtitle>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>AA 15.83</p>
+            </td>
+            <td>
+              <Body>Body</Body>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>AA 15.83</p>
+            </td>
+            <td>
+              <SmallText>Small text</SmallText>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>AA 15.83</p>
+            </td>
+            <td>
+              <ButtonText>Button Text</ButtonText>
+            </td>
+          </tr>
+        </Table>
       </TableContainer>
 
       <ContainerFPairing>

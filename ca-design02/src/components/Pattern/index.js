@@ -31,7 +31,7 @@ const Pattern = () => {
           <IndependentLink indepDefault>Independent link </IndependentLink>
         </div>
     </Container>
-    <Code code={code} language="javascript" />
+    <Code code={code} language="css" />
     </>
   );
 };
