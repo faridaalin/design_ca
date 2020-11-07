@@ -1,17 +1,18 @@
-import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
-import jsx from 'react-syntax-highlighter/dist/esm/languages/prism/jsx';
-import { darcula } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import React, { useEffect } from "react";
+import Prism from "prismjs";
+import "prismjs/themes/prism-tomorrow.css";
 
 
-SyntaxHighlighter.registerLanguage('jsx', jsx);
-
-export const codeBlock = () => {
-  const codeString = '(num) => num + 1';
-  // const codeString = `${children}`;
+export default function Code({ code, language }) {
+  useEffect(() => {
+    Prism.highlightAll();
+  }, []);
   return (
-    <SyntaxHighlighter language="javascript" style={darcula}>
-      {codeString}
-
-    </SyntaxHighlighter>
+    <div style={{ maxHeight: '50vh',
+      overflow: 'scroll'}}>
+      <pre>
+        <code className={`language-${language}`}>{code}</code>
+      </pre>
+    </div>
   );
-};
+}

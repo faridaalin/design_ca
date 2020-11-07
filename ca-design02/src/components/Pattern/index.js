@@ -1,11 +1,21 @@
 import React from "react";
-import codeBlock from "../code";
+import Code from "../code";
 import { Container } from "./StyledPattern";
 import svgPattern from "./polka-dots.svg";
 import { IndependentLink } from "../Links";
+import theme from '../../theme'
+
+
+
+
+const code = `
+background: ${theme.colors.grey[100]};
+background-size: auto;
+`;
 
 const Pattern = () => {
   return (
+    <>
     <Container style={{ backgroundImage: `url(${svgPattern})` }}>
       <div className="empty"></div>
       <div>
@@ -22,8 +32,9 @@ const Pattern = () => {
           <IndependentLink indepDefault>Independent link </IndependentLink>
         </div>
       </div>
-      <codeBlock />
     </Container>
+    <Code code={code} language="javascript" />
+    </>
   );
 };
 

@@ -13,6 +13,8 @@ import {
   ContainerFPairing,
 } from "./StyledTypography";
 import Description from "../Description/Description";
+import {code} from './code'
+import Code from "../code";
 
 const Typography = () => {
   return (
@@ -122,6 +124,7 @@ const Typography = () => {
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum.
         </Body>
+        <Code code={code} language="javascript" />
       </ContainerFPairing>
     </Container>
   );

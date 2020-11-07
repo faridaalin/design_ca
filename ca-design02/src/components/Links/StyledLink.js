@@ -83,10 +83,6 @@ export const StyledIndepLink = styled.a`
   ${getIndepLinkStyles}
 `;
 
-export const LinkContaincer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-`;
 
 export const Container = styled.div`
   display: flex;

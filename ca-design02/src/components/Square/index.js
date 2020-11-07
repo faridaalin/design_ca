@@ -1,6 +1,8 @@
 import React from "react";
-import { Container, StyledSquare, Grid } from "./StyledColorsAquare";
+import { Container, StyledSquare, Grid } from "./StyledColors";
 import Description from "../Description/Description";
+import {code} from './code'
+import Code from "../code";
 
 const Square = (props) => {
   const { colorName, shade } = props;
@@ -157,6 +159,7 @@ const ColorBoxes = (props) => {
           hsla="(240, 18%, 97%)"
         />
       </Grid>
+      <Code code={code} language="javascript" />
     </div>
   );
 };

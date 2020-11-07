@@ -1,6 +1,10 @@
 import React from "react";
+import Code from "../code";
 import { StyledButton, Container } from "./StyledButton";
 import Description from "../Description/Description";
+import {code} from './code'
+
+
 
 export function Button(props) {
   return <StyledButton {...props}>{props.children}</StyledButton>;
@@ -32,6 +36,7 @@ function Buttons(props) {
         <Button ghost>Ghost</Button>
         <Button buttonLink>Button Link</Button>
       </Container>
+      <Code code={code} language="css" />
     </>
   );
 }

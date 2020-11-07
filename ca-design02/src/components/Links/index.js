@@ -3,11 +3,14 @@ import {
   StyledInlineLink,
   StyledIndepLink,
   Container,
-  LinkContaincer,
 } from "./StyledLink";
 import Description from "../Description/Description";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import {code} from './code'
+import Code from "../code";
+
+
 
 function InlineLink(props) {
   return <StyledInlineLink {...props}>{props.children}</StyledInlineLink>;
@@ -21,6 +24,7 @@ export function IndependentLink(props) {
 }
 function Links(props) {
   return (
+    <>
     <Container id={props.id}>
       <Description>
         There are two main links in JURK´s design system. Inline links and
@@ -29,7 +33,7 @@ function Links(props) {
         can stand alone and should be used as navigation and only with short
         descriptive text. They can be paired with an icon.
       </Description>
-      <LinkContaincer>
+      <Container>
         <InlineLink className="default" default href="">
           Inline link
         </InlineLink>
@@ -42,8 +46,8 @@ function Links(props) {
         <InlineLink className="focus" focus href="">
           Inline link focused
         </InlineLink>
-      </LinkContaincer>
-      <LinkContaincer>
+      </Container>
+      <Container>
         <IndependentLink className="indep-default" indepDefault>
           Independent link
         </IndependentLink>
@@ -56,8 +60,10 @@ function Links(props) {
         <IndependentLink className="indep-focus" indepFocus>
           Independent link focused
         </IndependentLink>
-      </LinkContaincer>
+      </Container>
     </Container>
+    <Code code={code} language="css" />
+    </>
   );
 }
 
