@@ -3,7 +3,7 @@ import theme from "../../theme";
 import { up } from "styled-breakpoints";
 
 export const Container = styled.div`
-  padding: 2rem 1rem;
+  padding: 4rem 1rem;
   gap: 0.5rem;
   background: ${theme.colors.grey[100]};
   background-size: auto;
@@ -18,7 +18,7 @@ export const Container = styled.div`
   }
   .pattern-description {
     background-color: ${theme.colors.grey[200]};
-    padding: ${theme.padding.p3} ${theme.padding.p5};
+    padding: ${theme.padding.p4} ${theme.padding.p5};
     font-size: ${theme.fontSizes[1]}rem;
     color: ${theme.colors.black[400]};
     flex: 1;

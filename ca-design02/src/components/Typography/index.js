@@ -23,7 +23,7 @@ const Typography = () => {
       <Description>
         JURK uses two typefases, Josefin Sans, for headings/titles and Work Sans
         for main text. The typography can be applied in either black or white,
-        unsless it is a inline link, then use primary color.
+        unsless it is an inline link, then use primary color.
       </Description>
       <TableContainer>
       <Table>

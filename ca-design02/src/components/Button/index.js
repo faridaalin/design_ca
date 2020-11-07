@@ -18,16 +18,16 @@ function Buttons(props) {
         leading must match.
       </Description>
       <Description>
-        The primary button is the main should only appear once or twice per
+        The primary button is the main button should only appear once or twice per
         page. This buttons is mainly for extraodinary actions and shouldbe used
         sparely.
       </Description>
       <Description>
-        Use the the secondary button for all other actions on each page. The
+        Use the secondary button for all other actions on each page. The
         secondary button can be used in combonation with other buttons.
       </Description>
       <Description>
-        The ghost is least pronounced actions and should be used in combonation
+        The ghost button is for least pronounced actions and should be used in combonation
         with a primary or secondary button.
       </Description>
       <Container id={props.id}>

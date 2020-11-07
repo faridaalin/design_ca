@@ -8,7 +8,7 @@ const Header = styled.header`
   right: 0;
   background: ${theme.colors.grey["200"]};
   z-index: 1000;
-  padding: 1rem;
+  padding: 1rem 2rem;
   box-shadow: -4px -7px 13px ${theme.colors.black[200]};
 
   .logo {

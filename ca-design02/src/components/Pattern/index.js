@@ -26,8 +26,7 @@ const Pattern = () => {
             and only for section with little text and where it is room for
             decoration. The pattern especially great for areas less that needs
             playfulness or a modern twist. Can be used with text, where the text
-            has solid background color or with an image. All content should must
-            have and title and link or CTA.
+            has solid background color or with an image.
           </p>
           <IndependentLink indepDefault>Independent link </IndependentLink>
         </div>

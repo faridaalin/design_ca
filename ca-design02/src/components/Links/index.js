@@ -29,7 +29,7 @@ function Links(props) {
       <Description>
         There are two main links in JURK´s design system. Inline links and
         independent links. The inline links is to used wihtin lenghty text, a
-        sentence or paragraph. Independent links are deault link type, that are
+        sentence or paragraph. Independent links
         can stand alone and should be used as navigation and only with short
         descriptive text. They can be paired with an icon.
       </Description>
