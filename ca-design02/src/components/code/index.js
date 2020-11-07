@@ -1,6 +1,13 @@
 import React, { useEffect } from "react";
 import Prism from "prismjs";
 import "prismjs/themes/prism-tomorrow.css";
+import styled from 'styled-components'
+
+export const Container = styled.div`
+max-height: 50vh;
+overflow: scroll;
+  border-radius: 5px;
+`
 
 
 export default function Code({ code, language }) {
@@ -8,11 +15,10 @@ export default function Code({ code, language }) {
     Prism.highlightAll();
   }, []);
   return (
-    <div style={{ maxHeight: '50vh',
-      overflow: 'scroll'}}>
+    <Container>
       <pre>
         <code className={`language-${language}`}>{code}</code>
       </pre>
-    </div>
+    </Container>
   );
 }
