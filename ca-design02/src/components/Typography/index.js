@@ -11,6 +11,7 @@ import {
   ButtonText,
   Table,
   ContainerFPairing,
+  TableContainer
 } from "./StyledTypography";
 import Description from "../Description/Description";
 import {code} from './code'
@@ -24,7 +25,7 @@ const Typography = () => {
         for main text. The typography can be applied in either black or white,
         unsless it is a inline link, then use primary color.
       </Description>
-
+      <TableContainer>
       <Table>
         <tr className="tr-head">
           <th>WCAG Ratio</th>
@@ -32,7 +33,7 @@ const Typography = () => {
         </tr>
         <tr>
           <td className="wcag-desc">
-            <p>AA 17.13</p>
+            <p>AA 15.83</p>
           </td>
           <td>
             <H1>Title/Header 1</H1>
@@ -40,7 +41,7 @@ const Typography = () => {
         </tr>
         <tr>
           <td>
-            <p>AA 17.13</p>
+            <p>AA 15.83</p>
           </td>
           <td>
             <H2>Header 2</H2>
@@ -48,7 +49,7 @@ const Typography = () => {
         </tr>
         <tr>
           <td>
-            <p>AA 14.13</p>
+            <p>AA 13.61</p>
           </td>
           <td>
             <H3>Header 3</H3>
@@ -56,7 +57,7 @@ const Typography = () => {
         </tr>
         <tr>
           <td>
-            <p>AA 17.13</p>
+            <p>AA 15.83</p>
           </td>
           <td>
             <H4>Header 4</H4>
@@ -64,7 +65,7 @@ const Typography = () => {
         </tr>
         <tr>
           <td>
-            <p>AA 17.13</p>
+            <p>AA 15.83</p>
           </td>
           <td>
             <Subtitle>Subtitle/Body Large</Subtitle>
@@ -72,7 +73,7 @@ const Typography = () => {
         </tr>
         <tr>
           <td>
-            <p>AA 17.13</p>
+            <p>AA 15.83</p>
           </td>
           <td>
             <Body>Body</Body>
@@ -80,7 +81,7 @@ const Typography = () => {
         </tr>
         <tr>
           <td>
-            <p>AA 17.13</p>
+            <p>AA 15.83</p>
           </td>
           <td>
             <SmallText>Small text</SmallText>
@@ -88,13 +89,14 @@ const Typography = () => {
         </tr>
         <tr>
           <td>
-            <p>AA 17.13</p>
+            <p>AA 15.83</p>
           </td>
           <td>
             <ButtonText>Button Text</ButtonText>
           </td>
         </tr>
       </Table>
+      </TableContainer>
 
       <ContainerFPairing>
         <h3>Type Pairing</h3>

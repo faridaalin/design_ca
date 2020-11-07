@@ -17,8 +17,8 @@ const StyledSquare = styled.div`
 `;
 
 const Grid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   margin-top: ${theme.margin.xs};
   margin-bottom: ${theme.margin.l};

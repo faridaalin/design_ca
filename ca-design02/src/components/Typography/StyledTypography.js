@@ -102,6 +102,9 @@ export const ButtonText = styled.p`
     font-size: 16px;
   }
 `;
+export const TableContainer = styled.div`
+  overflow: scroll;
+`;
 export const Table = styled.table`
   border-collapse: collapse;
   width: 100%;
@@ -128,7 +131,7 @@ export const Table = styled.table`
 
   td p {
     font-size: calc(${theme.fontSizes[1]}rem + 0.2vw);
-    font-weight: ${theme.fontWeight.medium};
+
   }
 
   tr:nth-child(even) {

@@ -7,6 +7,8 @@ export const Container = styled.div`
 max-height: 50vh;
 overflow: scroll;
   border-radius: 5px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 `
 
 

@@ -18,7 +18,7 @@ const Pattern = () => {
     <>
     <Container style={{ backgroundImage: `url(${svgPattern})` }}>
       <div className="empty"></div>
-      <div>
+
         <div className="pattern-description">
           <h3>How to use</h3>
           <p>
@@ -31,7 +31,6 @@ const Pattern = () => {
           </p>
           <IndependentLink indepDefault>Independent link </IndependentLink>
         </div>
-      </div>
     </Container>
     <Code code={code} language="javascript" />
     </>
