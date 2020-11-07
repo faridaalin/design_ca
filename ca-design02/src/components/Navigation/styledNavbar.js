@@ -23,7 +23,7 @@ const Header = styled.header`
     width: 32px;
     display: grid;
     grid-template-rows: 4px 4px 4px;
-    align-content: space-around;
+    align-content: space-evenly;
     cursor: pointer;
     z-index: 2;
   }
@@ -31,6 +31,14 @@ const Header = styled.header`
   .hamburger-menu span {
     transition: 0.3s;
     background: ${theme.colors.black["500"]};
+
+    :first-child {
+      opacity: ${(props) => (props.show ? "0" : "1")};
+    }
+    :last-child {
+      opacity: ${(props) => (props.show ? "0" : "1")};
+    }
+
   }
   nav {
     display: flex;
