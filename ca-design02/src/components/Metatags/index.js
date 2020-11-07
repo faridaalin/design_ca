@@ -19,7 +19,7 @@ const Metatags = () => {
     />
     <meta
       itemprop="image"
-      content="https://res.cloudinary.com/djey7uz4e/image/upload/v1604501755/jurk_g2ax4u.png"
+      content="https://res.cloudinary.com/djey7uz4e/image/upload/v1604742367/JURK_xf9xkz.png"
     />
 
     {/* <!-- Facebook Meta Tags --> */}
@@ -32,7 +32,7 @@ const Metatags = () => {
     />
     <meta
       property="og:image"
-      content="https://res.cloudinary.com/djey7uz4e/image/upload/v1604501755/jurk_g2ax4u.png"
+      content="https://res.cloudinary.com/djey7uz4e/image/upload/v1604742367/JURK_xf9xkz.png"
     />
 
     {/* <!-- Twitter Meta Tags --> */}
@@ -44,7 +44,7 @@ const Metatags = () => {
     />
     <meta
       name="twitter:image"
-      content="https://res.cloudinary.com/djey7uz4e/image/upload/v1604501755/jurk_g2ax4u.png"
+      content="https://res.cloudinary.com/djey7uz4e/image/upload/v1604742367/JURK_xf9xkz.png"
     />
   </Helmet>
   )
